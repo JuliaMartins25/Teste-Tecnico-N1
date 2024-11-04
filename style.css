@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -14,25 +13,41 @@ body {
     background-size: cover;
 }
 
-.inicial {
-    position: relative;
-    width: 1000px;
-    height: 500px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    color: #333;
-    text-align: center;
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
-    background-image: url(./img/chuvisco.png);
-
+main {
+background: rgba(255, 255, 255, 0.26);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.6px);
+-webkit-backdrop-filter: blur(10.6px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+position: relative;
+width: 1000px;
+height: 600px;
+padding: 20px;
 }
 
-h2 {
+h1, h2 {
     margin-bottom: 10px;
     font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.left {
+    width: 30%;
+    height: 100%;
+    border-radius: 2rem 0 0 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-size: cover;
+}
+
+.right {
+    width: 30%;
+    height: 100%;
+    border-radius: 2rem 0 0 2rem;
+    display: flex;
+    justify-content: flex-end;
+
+
 }
 
 .login {
@@ -55,26 +70,41 @@ h2 {
 .title {
     font-size: 1.2rem;
     margin-bottom: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px; 
+}
+
+form legend{
+    padding: 0 10px;
     font-weight: bold;
 }
 
-.input-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.input-group input[type="text"],
-.input-group input[type="password"] {
+form fieldset{
+    border: 1px solid;
     padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 100%;
+    margin-bottom: 20px;
 }
 
-.input-group label {
-    font-size: 0.9rem;
+form label {
+    display: block;
+    margin-bottom: 8px;
 }
+
+form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
 
 .login-button {
     margin-top: 15px;
@@ -82,8 +112,8 @@ h2 {
     width: 100%;
     border: none;
     border-radius: 5px;
-    background: #333;
-    color: #fff;
+    background: #3a3a3a;
+    color: #dadada;
     cursor: pointer;
 }
 
